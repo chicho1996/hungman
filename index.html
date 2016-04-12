@@ -1,0 +1,51 @@
+<html>
+<head></head>
+<body>
+
+<script type="text/javascript">
+var sityva=prompt("sheiyvanet gamosacnobi sityva:");
+</script>
+<script type="text/javascript">
+</script>
+<div id="game">
+<input type="text" id="char"><input type="button" value="check" onClick="check(document.getElementById('char').value)" >
+<table border="1">
+<tr>
+<script type="text/javascript">
+if(sityva!=""){
+for(var i=0;i<sityva.length;i++){
+document.write('<td class="aso" width="20px" border-color="black" width="30" height="30"></td>');
+}}
+</script>
+</tr>
+</table>
+</div>
+<script type="text/javascript">
+var letters=document.getElementsByClassName("aso");
+var x=0;
+
+var size=sityva.length;
+var wageba=size+3;
+function check(shesamowmebeli){
+	wageba-=1;
+	if(wageba==0){
+		alert('tqven damarcxdit');
+	}
+		for(var i=0;i<sityva.length;i++){
+			if(sityva[i]==shesamowmebeli){
+				letters[i].innerHTML=shesamowmebeli;
+				x+=1;
+				if(size==x){
+					alert("gamarjvebulia");
+				}
+	
+			}
+			}	
+		}
+
+</script>
+</body>
+
+
+
+</html>
